@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  username = '';
+
+  checkUsername() {
+    if(this.username === '') {
+      return 'Username cannot be blank';
+    } else {
+      return this.username;
+    }
+  }
 }
